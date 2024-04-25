@@ -23,7 +23,6 @@ export const SearchInput = ({
             <a
               href="#"
               data-cy="ClearButton"
-              type="button"
               className="delete"
               onClick={handleClearSearch}
             />

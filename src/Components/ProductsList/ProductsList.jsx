@@ -71,7 +71,7 @@ export const ProductsList = ({ products }) => {
               <td data-cy="ProductCategory">{`${product.category.icon} - ${product.category.title}`}</td>
               <td
                 className={
-                  product.sex === 'male' ? 'has-text-link' : 'has-text-danger'
+                  product.user.sex === 'm' ? 'has-text-link' : 'has-text-danger'
                 }
                 data-cy="ProductUser"
               >

@@ -5,7 +5,6 @@ export const CategoryGroup = () => {
     <div className="panel-block is-flex-wrap-wrap">
       <a
         href="#/"
-        type="button"
         data-cy="AllCategories"
         className="button is-success mr-6 is-outlined"
       >
@@ -15,7 +14,6 @@ export const CategoryGroup = () => {
         return (
           <a
             href="#/"
-            type="button"
             data-cy="Category"
             key={category.id}
             className="button mr-2 my-1 is-info"
