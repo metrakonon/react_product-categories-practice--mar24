@@ -6,14 +6,16 @@ export const UserGroup = ({ currentUser, handleSelectUser }) => {
       <p className="panel-heading">Filters</p>
 
       <p className="panel-tabs has-text-weight-bold">
-        <a href={'#'} onClick={() => handleSelectUser('All')}>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a href="#" onClick={() => handleSelectUser('All')}>
           All
         </a>
 
         {usersFromServer.map(user => {
           return (
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a
-              href={'#'}
+              href="#"
               key={user.id}
               className={currentUser === user.id ? 'is-active' : ''}
               onClick={() => handleSelectUser(user.id)}

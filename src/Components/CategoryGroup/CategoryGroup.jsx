@@ -4,7 +4,7 @@ export const CategoryGroup = () => {
   return (
     <div className="panel-block is-flex-wrap-wrap">
       <a
-        href={'#/'}
+        href="#/"
         type="button"
         data-cy="AllCategories"
         className="button is-success mr-6 is-outlined"
@@ -14,7 +14,7 @@ export const CategoryGroup = () => {
       {categories.map(category => {
         return (
           <a
-            href={'#/'}
+            href="#/"
             type="button"
             data-cy="Category"
             key={category.id}

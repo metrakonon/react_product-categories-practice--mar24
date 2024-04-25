@@ -19,8 +19,9 @@ export const SearchInput = ({
 
         {searchQuery && (
           <span className="icon is-right">
+            {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
             <a
-              href={'#'}
+              href="#"
               data-cy="ClearButton"
               type="button"
               className="delete"
