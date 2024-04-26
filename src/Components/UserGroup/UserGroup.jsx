@@ -7,7 +7,11 @@ export const UserGroup = ({ currentUser, handleSelectUser }) => {
 
       <p className="panel-tabs has-text-weight-bold">
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="#" onClick={() => handleSelectUser('All')}>
+        <a
+          href="#"
+          className={currentUser === 'All' ? 'is-active' : ''}
+          onClick={() => handleSelectUser('All')}
+        >
           All
         </a>
 
